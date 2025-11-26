@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Curriculum Vitae</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Inter, Arial, sans-serif;
+      background:#fff;
+      color:#222;
+      height:100%;
+      display:flex;
+      flex-direction:column;
+    }
+    .cv-container {
+      display:flex;
+      flex:1;
+      padding:1rem;
+      gap:1rem;
+    }
+    .cv-text {
+      flex:2;
+      overflow-y:auto;
+    }
+    .cv-text h1 {
+      margin:0;
+      font-size:1.4rem;
+      color:#ff6a00;
+    }
+    .cv-text h2 {
+      margin:0;
+      font-size:1rem;
+      color:#555;
+    }
+    .cv-text section {
+      margin-top:1rem;
+    }
+    .cv-text section h3 {
+      margin-bottom:0.5rem;
+      color:#1f1e1e;
+      border-bottom:2px solid #efefef;
+      padding-bottom:0.25rem;
+      font-size:1rem;
+    }
+    .cv-text ul {
+      margin:0;
+      padding-left:1.2rem;
+    }
+    .cv-photo {
+      flex:1;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+    }
+    .cv-photo img {
+      width: 150px;
+      height:150px;
+      object-fit: cover;
+      border-radius:8px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="cv-text">
+      <h1>Martin Delgado</h1>
+      <h2>Fullstack Developer. Front-end. Back-end. Bases de datos</h2>
+
+      <section>
+        <h3>Perfil Profesional</h3>
+        <p>Profesional versátil, construye aplicaciónes web completas</p>
+      </section>
+
+      <section>
+        <h3>Experiencia</h3>
+        <ul>
+          <li><strong>2022 – Actualidad</strong> – Tecnologías Front-end: HTML, CSS, JavaScript (con frameworks como React, Angular o Vue.js).</li>
+          <li><strong>2022 – Actualidad</strong> – Tecnologías Back-end: Lenguajes de programación como Node.js, Python, Ruby, Java o PHP, y frameworks como Express, Django, Ruby on Rails o Spring .</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Educación</h3>
+        <ul>
+          <li>Fullstack developer – Universidad del Salvador, 2022</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Competencias</h3>
+        <ul>
+          <li>Bases de datos</li>
+          <li>Aplicaciones</li>
+          <li>Diseño web</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Contacto</h3>
+        <p>Email: diego@ejemplo.com | Tel: +54 9 11 1234-5678</p>
+      </section>
+    </div>
+
+    <div class="cv-photo">
+      <img src="../images/Martin.jpeg" alt="Martin" />
+    </div>
+  </div>
+</body>
+</html>
