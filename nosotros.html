@@ -5,33 +5,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Equipo</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css"> </head>
 
-<body>
-      <header class="header">
+<body class="team-page"> <header class="header">
         <a href="index.html" class="brand-link" title="Volver a la página principal">
-            <div class="brand">
-              <img src="./images/2.png" alt="AsesorarSeg logo" />
+            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header"/>
+            
+            <div class="brand-text-only">
               <div class="brand-title">
                 <div class="name">Asesorar<span class="seg">Seg</span></div>
-                <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span>
-                </div>
+                <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
               </div>
           </div>
         </a>
-        <h2 class="header-title-right">Nuestro Equipo</h2>
+        
+        <div class="header-right-text">
+            Nuestro Equipo
+        </div>
 
        </header>
        <main>
-    <section>
-      <h2>Socios</h2>
+    <section class="main-section-taller">
+      <h2>Fundadores</h2>
       <div class="team-grid">
         <div class="card-wrap">
           <div class="card" data-cv="./cvs/fernando.html" data-name="Fernando Delgado" tabindex="0">
             <div class="card-face card-front"><img src="./images/fernando.jpg" alt="Fernando" />
               <h3>Fernando Delgado</h3>
-              <p>Socio Gerente</p>
+              <p>Director de Operaciones y Logística</p>
             </div>
             <div class="card-face card-back">
               <h3>Fernando Delgado</h3>
@@ -43,7 +44,7 @@
           <div class="card" data-cv="./cvs/diego.html" data-name="Diego Zorzoli" tabindex="0">
             <div class="card-face card-front"><img src="./images/diego.jpg" alt="Diego" />
               <h3>Diego Zorzoli</h3>
-              <p>Socio Gerente</p>
+              <p>Director de estrategia de Formacion</p>
             </div>
             <div class="card-face card-back">
               <h3>Diego Zorzoli</h3>
@@ -53,24 +54,24 @@
         </div>
         <div class="card-wrap">
           <div class="card" data-cv="./cvs/juan.pdf" data-name="Juan Gómez" tabindex="0">
-            <div class="card-face card-front"><img src="./images/juan.jpg" alt="Juan" />
-              <h3>Juan Gómez</h3>
-              <p>Analista de Riesgos</p>
+            <div class="card-face card-front"><img src="./images/Stepa.png" alt="Juan" />
+              <h3>Daniel Stepaniuk</h3>
+              <p>Director Comercial y Relaciones Públicas</p>
             </div>
             <div class="card-face card-back">
-              <h3>Juan Gómez</h3>
+              <h3>Daniel Stepaniuk</h3>
               <p>Gestión de continuidad</p>
             </div>
           </div>
         </div>
         <div class="card-wrap">
           <div class="card" data-cv="./cvs/laura.pdf" data-name="Laura Sánchez" tabindex="0">
-            <div class="card-face card-front"><img src="./images/laura.jpg" alt="Laura" />
-              <h3>Laura Sánchez</h3>
-              <p>Directora de Operaciones</p>
+            <div class="card-face card-front"><img src="./images/descargar.jpg" alt="Laura" />
+              <h3>Veronica Burton</h3>
+              <p>Directora de Administracion y Finanzas</p>
             </div>
             <div class="card-face card-back">
-              <h3>Laura Sánchez</h3>
+              <h3>Veronica Burton</h3>
               <p>Experta en logística</p>
             </div>
           </div>
@@ -79,18 +80,19 @@
     </section>
 
     <section>
-      <h2>Consultores Asociados</h2>
+      <h2>Asociados Estratégicos</h2>
       <div class="team-grid">
         
         <div class="card-wrap">
-          <div class="card" data-cv="./cvs/Bavio.pdf" data-name="Diego Bavio" tabindex="0">
+          <div class="card" data-cv="./cvs/Bavio.html" data-name="Diego Bavio" tabindex="0">
             <div class="card-face card-front"><img src="./images/cropped-Diego-Bavio.png" alt="DiegoB" />
               <h3>Diego Bavio</h3>
-              <p>Consultor en Defesa</p>
+              <p>Proteccion de personas</p>
+              <p>Especialista en Defesa</p>
             </div>
             <div class="card-face card-back">
               <h3>Diego Bavio</h3>
-              <p>Protección personal y patrimonial</p>
+              <p>Inteligencia, Contrainteligencia y Seguridad</p>
             </div>
           </div>
         </div>
@@ -113,14 +115,14 @@
               <p>Formador de formadores</p>
             </div>
             <div class="card-face card-back">
-              <h3>Alejandro Podsun</p>
-              <p>Formador de líderes, gestion y liderazgo efectivo.</p>
+              <h3>Alejandro Podsun</h3>
+              <p>Formador de Líderes</p>
             </div>
           </div>
         </div>
         <div class="card-wrap">
           <div class="card" data-cv="./cvs/MartinD.html" data-name="Martin Delgado" tabindex="0">
-            <div class="card-face card-front"><img src="./images/Martin.jpeg" alt="Martin" />
+            <div class="card-face card-front"><img src="./images/Retrato artístico y .png" alt="Martin" />
               <h3>Martin Delgado</h3>
               <p>Desarrollo de aplicaciones</p>
             </div>
@@ -238,7 +240,7 @@
         
         <p class="contact-info">
             Email: <a href="mailto:info@asesorarseg.com">info@asesorarseg.com</a>
-            | Teléfono: <a href="tel:+54911xxxxxxxx">+54 9 11 xxxx xxxx</a>
+            | Teléfono: <a href="tel:+54 9 11 7117-0005">+54 9 11 7117-0005</a>
         </p>
 
         <p class="legal-links">

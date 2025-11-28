@@ -11,28 +11,26 @@
 <body>
     <header class="header">
         <a href="#inicio" class="brand-link" title="Volver a la página principal">
-            <div class="brand">
-                <img src="./images/2.png" alt="AsesorarSeg logo" />
+            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header" />
+
+            <div class="brand-text-only">
                 <div class="brand-title">
                     <div class="name">Asesorar<span class="seg">Seg</span></div>
-                    <div class="tag">Asesoramiento Corporativo en <span
-                            class="brand-orange-text">Seguridad</span>
-                    </div>
+                    <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
                 </div>
             </div>
         </a>
 
-        <div class="menu-wrap">
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
-            <nav class="nav" id="nav">
-                <a href="#inicio" data-target="inicio">Inicio</a>
-                <a href="./nosotros.html">Equipo</a>
-                </nav>
-        </div>
+        <nav class="nav" id="nav">
+            <a href="./nosotros.html">Equipo</a>
+            <a href="#" id="openContactModalFromNav">Contacto</a>
+            <a href="#services">Servicios</a>
+        </nav>
+
     </header>
 
     <main>
-        <section class="hero" id="inicio">
+        <section class="hero hero-20-percent-taller" id="inicio">
             <div class="hero-inner">
                 <h1 class="hero-title">Asesoría en seguridad para decisiones estratégicas</h1>
                 <div class="rotator" aria-live="polite">
@@ -43,77 +41,103 @@
                     <div class="item">Expertos en ciberseguridad y auditoría</div>
                     <div class="item">Soluciones a medida: de lo físico a blockchain</div>
                 </div>
-                <a class="hero-cta" href="#inicio" data-target="inicio">Saber sobre AsesorarSeg</a>
-            </div>
+                </div>
         </section>
 
-        <section class="about" id="nosotros">
+        <section class="about about-extended" id="nosotros">
             <div class="lead">
-                <h2>Como nace AsesorarSeg</h2>
-                <p class="lead-text">Somos un grupo de profesionales de diferentes áreas, que nos hemos reunido para
-                    brindar soluciones en materia de manejo de riesgos, protección humana y patrimonial, de manera
-                    personalizada, ajustada a cada requirente y su necesidad.
+                <h2>Tecnología, Ciencia y Estrategia en Seguridad</h2>
+                <p class="lead-text">Somos un equipo multidisciplinario de profesionales comprometidos con brindar
+                    soluciones personalizadas en gestión de riesgos, protección humana y patrimonial. Nos une una
+                    profunda vocación por el cliente y una pasión compartida por el manejo estratégico de riesgos.
+                    Atendemos cada requerimiento con empatía, cercanía y precisión, adaptándonos a las necesidades
+                    específicas de cada entorno y organización.
+                    Nuestro equipo está conformado por especialistas en diversas disciplinas, Psicólogos, Licenciados en
+                    Seguridad, Ingenieros en Medio Ambiente y Seguridad Industrial
+                    Ingenieros Electrónicos y en Comunicaciones, Criminalistas, Investigadores, Expertos en Seguridad
+                    Informática, de Datos y Redes
+                    Esta diversidad nos permite abordar los desafíos desde múltiples perspectivas, integrando
+                    conocimiento técnico, humano y estratégico para ofrecer soluciones efectivas, escalables y alineadas
+                    con los objetivos de nuestros clientes.</p>
 
-                    Nos une la pasión por el manejo de riesgos y la pasión por el cliente, a quien atendemos en forma
-                    empatica, cordial y directa.
-
-                    Entre nuestros profesionales hay: Psicologos, Licenciados en Seguridad, Ingenieros en Medio ambiente y Seguridad Industrial, Ingenieros electrónicos, Ingenieros
-                    en comunicaciones, Investigadores, Criminalistas, Especialistas en Seguridad Informática, de datos y
-                    redes y Tecnicos en Seguridad electrónica.</p>
+                <div class="about-mvv-grid">
+                    <div class="mvv-box">
+                        <h3>Misión</h3>
+                        <p>Maximizar la resiliencia operativa y el valor de marca de organizaciones complejas, mediante
+                            la integración avanzada y predictiva de sus ecosistemas de seguridad (físico, digital y
+                            humano), transformando el riesgo en una ventaja competitiva sostenible que asegure la
+                            continuidad y crecimiento estratégico.
+                        </p>
+                    </div>
+                    <div class="mvv-box">
+                        <h3>Visión</h3>
+                        <p>Ser el estándar global de facto en la resiliencia organizacional, reconocido por transformar
+                            la seguridad de un centro de costo reactivo a un motor de ventaja competitiva y confianza
+                            para la toma de decisiones estratégicas</p>
+                    </div>
+                    <div class="mvv-box">
+                        <h3>Valores</h3>
+                        <p>Nos guiamos por principios que reflejan nuestro compromiso con la
+                            excelencia y la responsabilidad, Innovación ética y funcional, Profesionalización de la
+                            seguridad, Transparencia y gobernanza, Tecnología inclusiva, Vinculación académica y técnica,               práctica.
+                            Cultura colaborativa, Equilibrio social y económico
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="services-bg"></div>
             <div class="services-panel">
                 <h2>Nuestros Servicios</h2>
                 <div class="service-grid">
 
-                    <a href="tarjeta1-detalles.html"class="service">
+                    <a href="tarjeta1-detalles.html" class="service">
                         <h3>🔒 Seg. fisica y electrónica</h3>
                         <p>Diseño, instalación y auditoría de sistemas.</p>
                     </a>
-                    <a href="tarjeta2-detalles.html"class="service">
+                    <a href="tarjeta2-detalles.html" class="service">
                         <h3>🌐 Ciberseguridad</h3>
                         <p>Protección de redes y datos sensibles.</p>
                     </a>
-                    <a href="tarjeta3-detalles.html"class="service">
+                    <a href="tarjeta3-detalles.html" class="service">
                         <h3>📹 Monitoreo Inteligente</h3>
                         <p>Videovigilancia, control de accesos y automatización.</p>
                     </a>
-                    <a href="tarjeta4-detalles.html"class="service">
+                    <a href="tarjeta4-detalles.html" class="service">
                         <h3>💻 Tecnología Avanzada</h3>
                         <p>Desarrollo, comercialización y licenciamiento de soluciones tecnológicas.</p>
                     </a>
-                    <a href="tarjeta5-detalles.html"class="service">
+                    <a href="tarjeta5-detalles.html" class="service">
                         <h3>⛓️ Blockchain & Trazabilidad</h3>
                         <p>Smart contracts, trazabilidad y tokenización de activos.</p>
                     </a>
-                    <a href="tarjeta6-detalles.html"class="service">
+                    <a href="tarjeta6-detalles.html" class="service">
                         <h3>📊 Consultoría Estratégica</h3>
                         <p>Gestión de riesgos y planificación de protección institucional.</p>
                     </a>
-                    <a href="tarjeta7-detalles.html"class="service">
+                    <a href="tarjeta7-detalles.html" class="service">
                         <h3>✅ Auditorías Normativas</h3>
                         <p>Auditorías de cumplimiento laboral, operativo y técnico.</p>
                     </a>
-                    <a href="tarjeta8-detalles.html"class="service">
+                    <a href="tarjeta8-detalles.html" class="service">
                         <h3>🎓 Capacitación Profesional</h3>
                         <p>Formación presencial y virtual en seguridad y ciberseguridad.</p>
                     </a>
-                    <a href="tarjeta9-detalles.html"class="service">
+                    <a href="tarjeta9-detalles.html" class="service">
                         <h3>🧪 Certificación de Personal</h3>
                         <p>Evaluación psicométrica y test de integridad.</p>
                     </a>
-                    <a href="tarjeta10-detalles.html"class="service">
+                    <a href="tarjeta10-detalles.html" class="service">
                         <h3>📑 Documentación Técnica</h3>
                         <p>Mapas de riesgo, matrices y manuales operativos.</p>
                     </a>
-                    <a href="tarjeta11-detalles.html"class="service">
+                    <a href="tarjeta11-detalles.html" class="service">
                         <h3>🤝 Alianzas Institucionales</h3>
                         <p>Convenios con universidades, organismos y centros de investigación.</p>
                     </a>
-                    <a href="tarjeta12-detalles.html"class="service">
+                    <a href="tarjeta12-detalles.html" class="service">
                         <h3>⛏️ Minería y Petróleo</h3>
                         <p>Asesoría especializada para empresas extractivas (minería y petróleo).</p>
                     </a>
@@ -124,31 +148,37 @@
         <section class="testimonial">
             <div class="testimonial-inner">
                 <h2>Visión en Acción</h2>
-                
+
                 <div class="pillar-grid">
-                    
+
                     <div class="pillar-card">
                         <h3>Gobernanza y Cumplimiento Normativo</h3>
-                        <p>Implementamos políticas y protocolos alineados con estándares internacionales (ISO, NIST, GDPR), garantizando trazabilidad, auditoría continua y cumplimiento regulatorio en cada operación.</p>
+                        <p>Implementamos políticas y protocolos alineados con estándares internacionales (ISO, NIST,
+                            GDPR), garantizando trazabilidad, auditoría continua y cumplimiento regulatorio en cada
+                            operación.</p>
                     </div>
 
                     <div class="pillar-card">
                         <h3>Gestión de Riesgos y Respuesta Proactiva</h3>
-                        <p>Aplicamos metodologías de evaluación de riesgos, simulaciones de escenarios y planes de contingencia que permiten anticipar amenazas y responder con rapidez, minimizando impacto operativo y reputacional.</p>
+                        <p>Aplicamos metodologías de evaluación de riesgos, simulaciones de escenarios y planes de
+                            contingencia que permiten anticipar amenazas y responder con rapidez, minimizando impacto
+                            operativo y reputacional.</p>
                     </div>
 
                     <div class="pillar-card">
                         <h3>Seguridad Física y Operacional Avanzada</h3>
-                        <p>Integramos controles de acceso, monitoreo inteligente y planes de continuidad operativa que protegen instalaciones críticas, personal y activos estratégicos, asegurando resiliencia frente a incidentes internos y externos.</p>
+                        <p>Integramos controles de acceso, monitoreo inteligente y planes de continuidad operativa que
+                            protegen instalaciones críticas, personal y activos estratégicos, asegurando resiliencia
+                            frente a incidentes internos y externos.</p>
                     </div>
                 </div>
             </div>
         </section>
-        </main>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacto">
         <p class="copyright">© 2025 AsesorarSeg | Todos los derechos reservados.</p>
-        
+
         <p class="contact-info">
             Email: <a href="mailto:info@asesorarseg.com">info@asesorarseg.com</a>
             | Teléfono: <a href="tel:+54911xxxxxxxx">+54 9 11 xxxx xxxx</a>
@@ -160,44 +190,62 @@
         </p>
     </footer>
 
-    <script>
-        // menú hamburguesa
-        const menuBtn = document.getElementById('menuBtn');
-        const nav = document.getElementById('nav');
-        if (menuBtn) {
-            menuBtn.addEventListener('click', () => {
-                nav.classList.toggle('open');
-                menuBtn.textContent = nav.classList.contains('open') ? '✕' : '☰';
-            });
-        }
+    <div id="contactModal" class="modal">
+        <div class="modal-panel contact-panel">
+            <div class="modal-header">
+                <h2 class="modal-title">Hablemos de Seguridad</h2>
+                <button class="btn-close" aria-label="Cerrar Formulario">&times;</button>
+            </div>
+            
+            <div class="modal-content">
+                <p>Complete el siguiente formulario</p>
+                
+                <form id="modal-contact-form" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Teléfono" class="full">
+                    
+                    <select name="service" class="full" required>
+                        <option value="">Seleccione un servicio de interés...</option>
+                        <option value="seguridad-fisica">Seguridad Física y Electrónica</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="monitoreo">Monitoreo Inteligente</option>
+                        <option value="tecnologia-avanzada">Tecnología Avanzada</option>
+                        <option value="blockchain">Blockchain y Cripto-seguridad</option>
+                        <option value="consultoria-estrategica">Consultoría Estratégica</option>
+                        <option value="auditorias">Auditorías Normativas</option>
+                        <option value="capacitacion">Capacitación Profesional</option>
+                        <option value="certificacion">Certificación de Personal</option>
+                        <option value="documentacion">Documentación Técnica</option>
+                        <option value="alianzas">Alianzas Institucionales</option>
+                        <option value="mineria">Minería y Petróleo</option>
+                        <option value="otro">Otro / Consulta General</option>
+                    </select>
 
-        document.querySelectorAll('a[data-target]').forEach(a => {
+                    <textarea name="message" placeholder="Su mensaje o consulta" class="full" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Lógica de Scroll y Hash existente (se mantiene)
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('data-target');
-                const el = document.getElementById(targetId);
-                if (el) {
-                    e.preventDefault();
-                    if (nav.classList.contains('open')) {
-                        nav.classList.remove('open');
-                        if (menuBtn) menuBtn.textContent = '☰';
-                    }
-                    setTimeout(() => {
+                const targetId = this.getAttribute('href').replace('#', '');
+                // Ignorar el evento si el target es la función de abrir el modal,
+                // para que no intente hacer scroll al mismo tiempo.
+                if (targetId === 'inicio' || targetId === 'services') { 
+                    const el = document.getElementById(targetId);
+                    if (el) {
+                        e.preventDefault();
+
                         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         const h = el.querySelector('h2') || el.querySelector('h1');
                         if (h) h.setAttribute('tabindex', '-1'), h.focus();
-                    }, 220);
+                    }
                 }
             });
-        });
-
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 820 && nav.classList.contains('open')) {
-                const isClickInside = nav.contains(e.target) || (menuBtn && menuBtn.contains(e.target));
-                if (!isClickInside) {
-                    nav.classList.remove('open');
-                    if (menuBtn) menuBtn.textContent = '☰';
-                }
-            }
         });
 
         window.addEventListener('load', () => {
@@ -206,6 +254,52 @@
                 const el = document.getElementById(hash);
                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
+        });
+        
+        // --------------------------------------
+        // LÓGICA DEL MODAL DE CONTACTO (NUEVA)
+        // --------------------------------------
+        const contactModal = document.getElementById('contactModal');
+        // El nuevo ID del enlace de la navegación para Contacto
+        const openContactModalFromNav = document.getElementById('openContactModalFromNav'); 
+        const closeContactModal = contactModal.querySelector('.btn-close');
+
+        // Función para abrir el modal
+        function openContact() {
+            contactModal.classList.add('open');
+            document.body.style.overflow = 'hidden'; // Evita el scroll en el cuerpo
+            contactModal.focus(); 
+        }
+
+        // Función para cerrar el modal
+        function closeContact() {
+            contactModal.classList.remove('open');
+            document.body.style.overflow = '';
+            // Resetea el formulario al cerrar
+            document.getElementById('modal-contact-form').reset();
+        }
+
+        // Event Listener para abrir el modal desde el menú
+        if (openContactModalFromNav) {
+            openContactModalFromNav.addEventListener('click', (e) => {
+                e.preventDefault(); // Detiene el comportamiento predeterminado del enlace (scroll)
+                openContact();
+            });
+        }
+
+        // Event Listener para cerrar con el botón X
+        if (closeContactModal) {
+            closeContactModal.addEventListener('click', closeContact);
+        }
+
+        // Cerrar al hacer click fuera del panel
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) closeContact();
+        });
+
+        // Cerrar con tecla Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && contactModal.classList.contains('open')) closeContact();
         });
     </script>
 </body>
