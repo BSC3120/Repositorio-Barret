@@ -44,7 +44,7 @@ body {
 }
 
 /* -------------------------------------- */
-/* HEADER - Centrado Absoluto y Branding */
+/* HEADER - Centrado Absoluto y Branding  */
 /* -------------------------------------- */
 
 /* Contenedor del Header (Base para INDEX.HTML y NOSOTROS.HTML) */
@@ -58,7 +58,6 @@ body {
     background: linear-gradient(90deg, var(--black), var(--black) 60%);
     color: #fff;
     z-index: 100; /* Asegura que el header siempre esté encima */
-    /* Borde inferior naranja */
     border-bottom: 3px solid #FF6600; 
 }
 
@@ -154,22 +153,23 @@ header img {
 }
 
 .nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
     padding: 0.45rem 0.65rem;
     border-radius: 8px
 }
+
 .header-right-text {
     /* Ajustado a un tamaño más grande para que se parezca a un encabezado (H1/H2) */
     font-size: 2em; 
     font-weight: bold;
-    color: white; /* Mantener color de texto oscuro */
+    color: white;
     flex-shrink: 0;
     text-align: right;
-    margin: 0; /* Asegura que no haya márgenes que desalineen con el logo */
-    line-height: 1.2; /* Ajusta la altura de línea */
+    margin: 0;
+    line-height: 1.2;
 }
 
 .nav a:hover {
@@ -222,20 +222,32 @@ h2 {
     letter-spacing: 0.2px;
 }
 
-.detail-content .hero-style-title {
-    font-size: 2.5rem; /* El tamaño grande del hero */
+.detail-content {
+    font-size: 1.5rem;
+    line-height: 1.03;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 var(--padding-mobile); /* APLICADO: Padding lateral para el contenido detallado */
+}
+
+.hero-style-title {
+    font-size: 2.5rem;
     line-height: 1.03;
     color: var(--brand-orange);
-    font-weight: 900; /* Bolder para impacto */
+    font-weight: 900;
     letter-spacing: 0.2px;
-    
-    /* Mantener el centrado y el padding/margin de la estructura anterior */
     text-align: center;
     padding-top: 1.5rem;
     margin-bottom: 0.5rem;
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 0 var(--padding-mobile); /* APLICADO: Padding lateral para el contenido detallado */
+    padding: 0 var(--padding-mobile);
 }
 
 .rotator {
@@ -362,15 +374,23 @@ h2 {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.5); 
     border: none; 
-    box-shadow: none; 
     border-radius: 8px;
-    text-align: center;
+    text-align: justify;
+    transition: transform .2s ease, background-color .2s ease;
+}
+
+/* [NUEVO] Efecto hover (elevación + fondo naranja suave) */
+.mvv-box:hover {
+    transform: translateY(-5px); 
+    background-color: rgb(187, 178, 178);
+    box-shadow: 0 12px 25px #fc4c00;
 }
 
 .mvv-box h3 {
     margin-top: 0;
     font-size: 25px;
     color: #fc4c00;
+    text-align: center;
     border-bottom: 2px solid #fc4c00; 
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -466,16 +486,17 @@ h2 {
     box-shadow: var(--card-shadow);
     border-top: 4px solid var(--brand-orange);
     /* Propiedades para enlace (a) */
-    text-decoration: none; /* ELIMINA EL SUBRAYADO */
-    color: var(--text); /* FUERZA EL COLOR DE TEXTO PREDETERMINADO (NEGRO/GRIS) */
-    display: block; /* HACE TODA LA TARJETA CLICKABLE */
+    text-decoration: none;
+    color: var(--text);
+    display: block; 
     /* Efectos hover/click */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
 
+/* Caja de servicios */
 .service:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(10, 20, 30, 0.15);
     border-top-color: var(--brand-orange-dark);
 }
@@ -525,11 +546,12 @@ h2 {
 
 .pillar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 1.5rem;
     text-align: left;
 }
 
+/* tarjetas Vision en accion */
 .pillar-card {
     background: rgba(255, 255, 255, 0.30);
     padding: 1.5rem;
@@ -542,12 +564,14 @@ h2 {
 }
 
 .pillar-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 25px white;
 }
 
 .pillar-card h3 {
     color: var(--brand-orange);
+    text-align: center;
     font-size: 1.15rem;
     margin: 0 0 0.8rem;
     font-weight: 700;
@@ -557,6 +581,7 @@ h2 {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
+    text-align: justify;
     color: #ccc;
 }
 
@@ -731,7 +756,7 @@ h2 {
 .btn-close {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
     color: #888;
     transition: color 0.15s;
@@ -800,7 +825,7 @@ h2 {
 .card-wrap {
     perspective: 1200px;
     outline: none;
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -1042,7 +1067,7 @@ h2 {
 /* Móvil (hasta 600px) */
 @media (max-width: 600px) {
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     .modal-panel {
         max-width: 95%;
@@ -1056,7 +1081,7 @@ h2 {
         align-items: flex-start;
     }
     .card {
-        width: 90%;
+        width: 100%;
         height: 250px;
     }
 }
