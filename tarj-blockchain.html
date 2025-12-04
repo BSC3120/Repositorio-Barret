@@ -4,32 +4,32 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Blockchain & Trazabilidad</title>
+    <title>Alianzas Institucionales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    class="team-page"> <header class="header">
-        <a href="index.html" class="brand-link" title="Volver a la página principal">
-            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header"/>
-            
+    <header class="header">
+            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header" />
             <div class="brand-text-only">
-              <div class="brand-title">
-                <div class="name">Asesorar<span class="seg">Seg</span></div>
-                <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
-              </div>
-        </div>
-        </a>
-        <a href="index.html" class="brand-link" title="Volver a servicios">
-        <div class="header-right-text">
-            Volver a Servicios
-        </div>
-    </a>    
+                <div class="brand-title">
+                    <div class="name">Asesorar<span class="seg">Seg</span></div>
+                    <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
+                </div>
+            </div>
+        
+        <nav class="nav" id="nav">
+            <a href="./index.html">Portada</a>
+            <a href="./nosotros.html">Equipo</a>
+            <a href="#" id="openContactModalFromNav">Contacto</a>
+            <a href="./index.html#services">Servicios</a>
+        </nav>
+
     </header>
 
     <main class="detail-content">
-        <h1 class="hero-style-title">Blockchain, trazabilidad e inmutabilidad</h1>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
+        <h2 class="main-section-title">Blockchain, trazabilidad e inmutabilidad</h1>
+        <p style="text-align: justify; max-width: 1200px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
             Asesoramos en la implementación estratégica de tecnologías de registro distribuido (DLT) para garantizar la
             inmutabilidad de la información, la trazabilidad punta a punta de productos y la automatización
             segura de procesos mediante Smart Contracts. Convertimos la desconfianza en certeza operativa.
@@ -38,30 +38,35 @@
         <ul class="detail-list">
             <li>
                 <strong>Diseño e Implementación de Smart Contracts</strong>
+                <br>
                 <span>Desarrollo y auditoría de contratos inteligentes auto-ejecutables que automatizan procesos de
                     pago, cumplimiento de acuerdos y liberación de activos de forma segura y sin intermediarios.</span>
             </li>
             <br>
             <li>
                 <strong>Auditoría de Seguridad de Smart Contracts</strong>
+                <br>
                 <span>Análisis exhaustivo del código y lógica del contrato para prevenir vulnerabilidades, ataques de
                     reentrada y fallos operacionales o financieros antes de su despliegue en la red principal.</span>
             </li>
             <br>
             <li>
                 <strong>Marco Regulatorio (LegalTech) y Compliance DLT</strong>
+                <br>
                 <span>Asesoramiento sobre los marcos legales y regulatorios (FATF, MiCA) aplicables a las redes DLT,
                     garantizando la legalidad y el cumplimiento de las operaciones descentralizadas.</span>
             </li>
             <br>
             <li>
                 <strong>Soluciones de Trazabilidad Empresarial (Supply Chain)</strong>
+                <br>
                 <span>Integración de Blockchain para crear un registro inmutable y verificable del origen, estado y
                     movimiento de bienes, desde la materia prima hasta el consumidor final, combatiendo el fraude.</span>
             </li>
             <br>
             <li>
                 <strong>Tokenización de Activos Reales (RWA)</strong>
+                <br>
                 <span>Consultoría sobre la digitalización de activos físicos o financieros (inmuebles, acciones,
                     propiedad intelectual) en forma de tokens seguros, mejorando la liquidez y la gestión de la
                     propiedad.</span>
@@ -69,18 +74,21 @@
             <br>
             <li>
                 <strong>Identidad Digital Descentralizada (DID) para la Seguridad</strong>
+                <br>
                 <span>Implementación de sistemas de identidad soberana y verificable que dan a los usuarios control
                     sobre sus datos, fortaleciendo los accesos seguros y el control de la privacidad.</span>
             </li>
             <br>
             <li>
                 <strong>Monederos Corporativos y Custodia de Criptoactivos</strong>
+                <br>
                 <span>Asesoramiento sobre la infraestructura de seguridad necesaria para la gestión, almacenamiento
                     (custodia fría/caliente) y transferencia segura de criptoactivos y tokens corporativos.</span>
             </li>
             <br>
             <li>
                 <strong>Gobernanza de Redes Blockchain</strong>
+                <br>
                 <span>Diseño de políticas y modelos de consenso para redes privadas o de consorcio, asegurando el
                     cumplimiento normativo y la escalabilidad del sistema DLT.</span>
             </li>
@@ -100,6 +108,48 @@
             | <a href="./terminos-condiciones.html" target="_blank">Términos y Condiciones</a>
         </p>
     </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-panel contact-panel">
+            <div class="modal-header">
+                <h2 class="modal-title">Hablemos de Seguridad</h2>
+                <button class="btn-close" aria-label="Cerrar Formulario">&times;</button>
+            </div>
+
+            <div class="modal-content">
+                <p>Complete el siguiente formulario</p>
+
+                <form id="modal-contact-form" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Teléfono" class="full">
+
+                    <select name="service" class="full" required>
+                        <option value="">Seleccione un servicio de interés...</option>
+                        <option value="seguridad-fisica">Seguridad Física y Electrónica</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="monitoreo">Monitoreo Inteligente</option>
+                        <option value="tecnologia-avanzada">Tecnología Avanzada</option>
+                        <option value="blockchain">Blockchain y Cripto-seguridad</option>
+                        <option value="consultoria-estrategica">Consultoría Estratégica</option>
+                        <option value="auditorias">Auditorías Normativas</option>
+                        <option value="capacitacion">Capacitación Profesional</option>
+                        <option value="certificacion">Certificación de Personal</option>
+                        <option value="documentacion">Documentación Técnica</option>
+                        <option value="alianzas">Alianzas Institucionales</option>
+                        <option value="mineria">Minería y Petróleo</option>
+                        <option value="otro">Otro / Consulta General</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Su mensaje o consulta" class="full" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
 </body>
 
 </html>

@@ -1,67 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <title>Curriculum Vitae</title>
-  <style>
-    body {
-      margin:0;
-      font-family: Inter, Arial, sans-serif;
-      background:#fff;
-      color:#222;
-      height:100%;
-      display:flex;
-      flex-direction:column;
-    }
-    .cv-container {
-      display:flex;
-      flex:1;
-      padding:1rem;
-      gap:1rem;
-    }
-    .cv-text {
-      flex:2;
-      overflow-y:auto;
-    }
-    .cv-text h1 {
-      margin:0;
-      font-size:1.4rem;
-      color:#ff6a00;
-    }
-    .cv-text h2 {
-      margin:0;
-      font-size:1rem;
-      color:#555;
-    }
-    .cv-text section {
-      margin-top:1rem;
-    }
-    .cv-text section h3 {
-      margin-bottom:0.5rem;
-      color:#1f1e1e;
-      border-bottom:2px solid #efefef;
-      padding-bottom:0.25rem;
-      font-size:1rem;
-    }
-    .cv-text ul {
-      margin:0;
-      padding-left:1.2rem;
-    }
-    .cv-photo {
-      flex:1;
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-    }
-    .cv-photo img {
-      width: 150px;
-      height:150px;
-      object-fit: cover;
-      border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    }
-  </style>
+  
 </head>
+<link rel="stylesheet" href="Styles-cv.css">
 <body>
   <div class="cv-container">
     <div class="cv-text">
@@ -70,19 +15,62 @@
 
       <section>
         <h3>Perfil Profesional</h3>
-        <p>Profesional versátil, domina JavaScript, TypeScript, PHP, C#(learning)</p>
-        <p>Frameworks , Front-end React, Next, Vue, Angular, Back-end: Node, Nest, .NET, Codelgniter</p>
-        <p>Database: MySQL, MariaDB, SQl, Server</p>
-        <p>Otros: Git, Docker, DBeaver, Postman</p>
+        <br>
+        <li>Martin Delgado es un Desarrollador Full Stack Jr. con sólida formación técnica y experiencia en proyectos
+          web integrales, capaz de trabajar tanto en frontend como en backend. Su trayectoria en el deporte profesional
+          le aportó disciplina, resiliencia y habilidades de trabajo en equipo que hoy aplica al desarrollo de software.
+          Se destaca por su capacidad de adaptación, pensamiento lógico y entusiasmo por la tecnología, los videojuegos
+          y la resolución de problemas, lo que lo convierte en un perfil versátil y orientado a aportar soluciones
+          innovadoras y colaborar en proyectos que generen impacto.</li>
+
+
       </section>
 
       <section>
         <h3>Experiencia</h3>
         <ul>
-          <li>Aplicación Web de Control de Stocks y Facturación (Mayorista)</li>
-          <li>Aplicación Web de Cotizaciones de Empresas en Bolsa</li>
-          <li>Portal de Empleo (Proyecto Web Estático)</li>
-        </ul>
+          <li><em>Aplicación Web de Control de Stock y Facturación – 2025</em>
+            <ul>
+              <li>Gestión de productos y stock</li>
+              <li>Roles de usuario (Administrador, Gerente, Vendedor)</li>
+              <li>Sistema de facturación con PDF y filtros</li>
+              <li>Comisiones automáticas con historial por venta</li>
+              <li>Login con JWT y protección de rutas</li>
+              <li><strong>Tecnologías:</strong> Nest.js, Next.js, MySQL</li>
+              <br>
+            </ul>
+          </li>
+
+          <li><em>Aplicación Web de Cotizaciones Bursátiles – 2024</em>
+            <ul>
+              <li>Visualización de datos bursátiles con gráficos interactivos</li>
+              <li>Automatización de generación de índices</li>
+              <li>Consumo de API externa</li>
+              <li><strong>Tecnologías:</strong> Nest.js, Next.js, MySQL</li>
+              <br>
+            </ul>
+          </li>
+
+          <li><em>Minijuego Web de Cofres – 2023</em>
+            <ul>
+              <li>Registro/Login con JWT</li>
+              <li>Panel de administrador con gestión de usuarios, cofres y monedas</li>
+              <li>Historial de premios y transacciones</li>
+              <li>Roles con validaciones por bcrypt</li>
+              <li><strong>Tecnologías:</strong> Node.js, React.js, MySQL</li>
+              <br>
+            </ul>
+          </li>
+
+          <li><em>Portal de Empleo – 2022</em>
+            <ul>
+              <li>Home con cards de noticias</li>
+              <li>Portal de empleos con puestos y empresas</li>
+              <li>Publicación de búsquedas laborales</li>
+              <li><strong>Tecnologías:</strong> React.js</li>
+            </ul>
+          </li>
+
       </section>
 
       <section>
@@ -103,11 +91,12 @@
         </ul>
       </section>
 
-      </div>
+    </div>
 
     <div class="cv-photo">
       <img src="../images/Martin.jpeg" alt="Martin" />
     </div>
   </div>
 </body>
+
 </html>

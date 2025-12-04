@@ -4,33 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Tecnología Avanzada</title>
+    <title>Alianzas Institucionales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    class="team-page"> <header class="header">
-        <a href="index.html" class="brand-link" title="Volver a la página principal">
-            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header"/>
-            
+    <header class="header">
+            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header" />
             <div class="brand-text-only">
-              <div class="brand-title">
-                <div class="name">Asesorar<span class="seg">Seg</span></div>
-                <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
-              </div>
-          </div>
-        </a>
-        <a href="index.html" class="brand-link" title="Volver a servicios">
-        <div class="header-right-text">
-            Volver a Servicios
-        </div>
-    </a>    
+                <div class="brand-title">
+                    <div class="name">Asesorar<span class="seg">Seg</span></div>
+                    <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
+                </div>
+            </div>
         
+        <nav class="nav" id="nav">
+            <a href="./index.html">Portada</a>
+            <a href="./nosotros.html">Equipo</a>
+            <a href="#" id="openContactModalFromNav">Contacto</a>
+            <a href="./index.html#services">Servicios</a>
+        </nav>
+
     </header>
 
     <main class="detail-content">
-        <h1 class="hero-style-title">Tecnología de avanzada</h1>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
+        <h2 class="main-section-title">Tecnología de avanzada</h1>
+            <br>
+        <p style="text-align: justify; max-width: 1200px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
             Transformamos los desafíos de seguridad únicos en activos tecnológicos propios. Nos especializamos en la
             I+D (Investigación y Desarrollo), creación de software de nicho, comercialización estratégica y
             gestión de licenciamiento de soluciones que resuelven problemas donde la tecnología comercial estándar no
@@ -40,38 +40,44 @@
         <ul class="detail-list">
             <li>
                 <strong>I+D y Desarrollo de Software de Nicho</strong>
+                <br>
                 <span>Creación de aplicaciones, plataformas y algoritmos a medida para necesidades de seguridad altamente
                     especializadas, como análisis forense avanzado o integración de sistemas legados.</span>
             </li>
             <br>
             <li>
                 <strong>Soluciones de Firmware y Hardware a Medida</strong>
+                <br>
                 <span>Diseño y optimización de componentes electrónicos y firmware para el control seguro de
                     dispositivos críticos (IoT de seguridad) y la recolección de datos en entornos hostiles.</span>
             </li>
             <br>
             <li>
                 <strong>Gestión de Propiedad Intelectual y Licenciamiento</strong>
+                <br>
                 <span>Asesoramiento legal y estratégico para el registro, protección y licenciamiento de desarrollos
                     tecnológicos y propiedad intelectual propia, generando nuevas fuentes de ingresos.</span>
             </li>
             <br>
             <li>
                 <strong>Integración de Sistemas Dispares (Middleware Avanzado)</strong>
+                <br>
                 <span>Desarrollo de middleware y APIs personalizadas que permiten la comunicación fluida y segura entre
                     sistemas de seguridad física, ciberseguridad y plataformas de gestión corporativa (ERP/CRM).</span>
             </li>
             <br>
             <li>
                 <strong>Comercialización Estratégica de Innovación</strong>
+                <br>
                 <span>Consultoría para la introducción exitosa de nuevas tecnologías de seguridad al mercado, cubriendo
                     desde la validación técnica hasta la estrategia de precios, distribución y escalabilidad.</span>
             </li>
             <br>
             <li>
                 <strong>Tecnología Antifalsificación y Control de Activos</strong>
+                <br>
                 <span>Desarrollo de soluciones únicas para la autenticación de productos y el rastreo de activos de alto
-                    valor, utilizando elementos como *digital watermarking* o cifrado avanzado.</span>
+                    valor, utilizando elementos como digital watermarking o cifrado avanzado.</span>
             </li>
         </ul>
     </main>
@@ -89,6 +95,48 @@
             | <a href="./terminos-condiciones.html" target="_blank">Términos y Condiciones</a>
         </p>
     </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-panel contact-panel">
+            <div class="modal-header">
+                <h2 class="modal-title">Hablemos de Seguridad</h2>
+                <button class="btn-close" aria-label="Cerrar Formulario">&times;</button>
+            </div>
+
+            <div class="modal-content">
+                <p>Complete el siguiente formulario</p>
+
+                <form id="modal-contact-form" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Teléfono" class="full">
+
+                    <select name="service" class="full" required>
+                        <option value="">Seleccione un servicio de interés...</option>
+                        <option value="seguridad-fisica">Seguridad Física y Electrónica</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="monitoreo">Monitoreo Inteligente</option>
+                        <option value="tecnologia-avanzada">Tecnología Avanzada</option>
+                        <option value="blockchain">Blockchain y Cripto-seguridad</option>
+                        <option value="consultoria-estrategica">Consultoría Estratégica</option>
+                        <option value="auditorias">Auditorías Normativas</option>
+                        <option value="capacitacion">Capacitación Profesional</option>
+                        <option value="certificacion">Certificación de Personal</option>
+                        <option value="documentacion">Documentación Técnica</option>
+                        <option value="alianzas">Alianzas Institucionales</option>
+                        <option value="mineria">Minería y Petróleo</option>
+                        <option value="otro">Otro / Consulta General</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Su mensaje o consulta" class="full" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
 </body>
 
 </html>

@@ -4,33 +4,32 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Consultoría Estratégica</title>
+    <title>Alianzas Institucionales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    class="team-page"> <header class="header">
-        <a href="index.html" class="brand-link" title="Volver a la página principal">
-            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header"/>
-            
+    <header class="header">
+            <img src="./images/5.png" alt="AsesorarSeg logo" class="logo-left-header" />
             <div class="brand-text-only">
-              <div class="brand-title">
-                <div class="name">Asesorar<span class="seg">Seg</span></div>
-                <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
-              </div>
-        </div>
-        </a>
-        <a href="index.html" class="brand-link" title="Volver a servicios">
-        <div class="header-right-text">
-            Volver a Servicios
-        </div>
-    </a>    
+                <div class="brand-title">
+                    <div class="name">Asesorar<span class="seg">Seg</span></div>
+                    <div class="tag">Asesoramiento Corporativo en <span class="brand-orange-text">Seguridad</span></div>
+                </div>
+            </div>
+        
+        <nav class="nav" id="nav">
+            <a href="./index.html">Portada</a>
+            <a href="./nosotros.html">Equipo</a>
+            <a href="#" id="openContactModalFromNav">Contacto</a>
+            <a href="./index.html#services">Servicios</a>
+        </nav>
+
     </header>
 
-
     <main class="detail-content">
-        <h1 class="hero-style-title">Consultoria Estrategica: Gestion de riesgos y resiliencia institucioinal</h1>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
+        <h2 class="main-section-title">Consultoria Estrategica: Gestion de riesgos y resiliencia institucioinal</h1><br>
+        <p style="text-align: justify; max-width: 1200px; margin: 0 auto 2rem; font-size: 1.1rem; color: white;">
             Actuamos como asesores de la Alta Dirección, traduciendo la seguridad y el riesgo en métricas de desempeño y
             valor estratégico. Nuestro enfoque es holístico: alinear la inversión en protección con los objetivos de
             negocio, garantizar la continuidad operativa ante cualquier disrupción y blindar la reputación
@@ -39,44 +38,44 @@
 
         <ul class="detail-list">
             <li>
-                <strong>Análisis de Riesgos Estratégicos (Enterprise Risk Management - ERM)</strong>
+                <strong>Análisis de Riesgos Estratégicos (Enterprise Risk Management - ERM)</strong><br>
                 <span>Mapeo y evaluación de riesgos a nivel corporativo (políticos, macroeconómicos, tecnológicos y
                     operativos), presentando un cuadro de mando para la toma de decisiones de la Junta Directiva.</span>
             </li>
             <br>
             <li>
-                <strong>Planificación de Continuidad de Negocio (BCP) y Recuperación ante Desastres (DRP)</strong>
+                <strong>Planificación de Continuidad de Negocio (BCP) y Recuperación ante Desastres (DRP)</strong><br>
                 <span>Desarrollo y testeo de planes robustos que aseguran la reactivación de las funciones críticas del
                     negocio con mínima interrupción tras un evento catastrófico.</span>
             </li>
             <br>
             <li>
-                <strong>Alineación de Inversión en Seguridad con Estrategia Corporativa</strong>
+                <strong>Alineación de Inversión en Seguridad con Estrategia Corporativa</strong><br>
                 <span>Definición de hojas de ruta (roadmaps) de seguridad a 3 y 5 años, asegurando que el gasto en
                     protección maximice el retorno de la inversión y soporte la expansión del negocio.</span>
             </li>
             <br>
             <li>
-                <strong>Asesoramiento en Crisis y Gestión Reputacional</strong>
+                <strong>Asesoramiento en Crisis y Gestión Reputacional</strong><br>
                 <span>Preparación de planes de comunicación y respuesta rápida para mitigar el daño reputacional y
                     financiero durante incidentes de alta visibilidad (ej. ciberataques, fraude interno,
                     accidentes).</span>
             </li>
             <br>
             <li>
-                <strong>Diseño de la Arquitectura de Seguridad Institucional</strong>
+                <strong>Diseño de la Arquitectura de Seguridad Institucional</strong><br>
                 <span>Estructuración de la función de seguridad (física y lógica) de la empresa, definiendo roles,
                     responsabilidades, y la integración de Comités de Riesgo.</span>
             </li>
             <br>
             <li>
-                <strong>Simulacros de Mesa para la Alta Dirección (Tabletop Exercises)</strong>
+                <strong>Simulacros de Mesa para la Alta Dirección (Tabletop Exercises)</strong><br>
                 <span>Ejercicios prácticos con el C-Level y la Dirección para poner a prueba la capacidad de decisión y
                     respuesta ante escenarios de crisis complejos y multifactoriales.</span>
             </li>
             <br>
             <li>
-                <strong>Valoración de Riesgo de Terceros y Cadena de Suministro</strong>
+                <strong>Valoración de Riesgo de Terceros y Cadena de Suministro</strong><br>
                 <span>Evaluación de la vulnerabilidad introducida por proveedores, socios y partners, e implementación
                     de cláusulas contractuales y auditorías de seguridad en la cadena de valor.</span>
             </li>
@@ -96,6 +95,48 @@
             | <a href="./terminos-condiciones.html" target="_blank">Términos y Condiciones</a>
         </p>
     </footer>
+
+<div id="contactModal" class="modal">
+        <div class="modal-panel contact-panel">
+            <div class="modal-header">
+                <h2 class="modal-title">Hablemos de Seguridad</h2>
+                <button class="btn-close" aria-label="Cerrar Formulario">&times;</button>
+            </div>
+
+            <div class="modal-content">
+                <p>Complete el siguiente formulario</p>
+
+                <form id="modal-contact-form" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Teléfono" class="full">
+
+                    <select name="service" class="full" required>
+                        <option value="">Seleccione un servicio de interés...</option>
+                        <option value="seguridad-fisica">Seguridad Física y Electrónica</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="monitoreo">Monitoreo Inteligente</option>
+                        <option value="tecnologia-avanzada">Tecnología Avanzada</option>
+                        <option value="blockchain">Blockchain y Cripto-seguridad</option>
+                        <option value="consultoria-estrategica">Consultoría Estratégica</option>
+                        <option value="auditorias">Auditorías Normativas</option>
+                        <option value="capacitacion">Capacitación Profesional</option>
+                        <option value="certificacion">Certificación de Personal</option>
+                        <option value="documentacion">Documentación Técnica</option>
+                        <option value="alianzas">Alianzas Institucionales</option>
+                        <option value="mineria">Minería y Petróleo</option>
+                        <option value="otro">Otro / Consulta General</option>
+                    </select>
+
+                    <textarea name="message" placeholder="Su mensaje o consulta" class="full" required></textarea>
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
 </body>
 
 </html>
