@@ -192,7 +192,7 @@
     const cardEls = $$('.card');
 
     function openCV(cvPath, name) {
-      if (titleEl) titleEl.textContent = name ? `Currículo — ${name}` : 'Currículo';
+      if (titleEl) titleEl.textContent = name ? `Currículo ${name}` : 'Currículo';
       if (iframe && cvPath) {
         // If it's a PDF or HTML, we set src. For PDF we keep download available.
         iframe.src = cvPath;

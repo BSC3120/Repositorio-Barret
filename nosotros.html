@@ -43,6 +43,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/daniel.html" data-name="Daniel Stepaniuk" tabindex="0">
                 <div class="card-face card-front"><img src="./images/Stepa.png" alt="Stepa" />
@@ -55,6 +56,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/fernando.html" data-name="Fernando Delgado" tabindex="0">
                 <div class="card-face card-front"><img src="./images/fernando.jpg" alt="Fernando" />
@@ -67,6 +69,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/laura.pdf" data-name="Veronica Burton" tabindex="0">
                 <div class="card-face card-front"><img src="./images/foto-vero.jpeg" alt="Vero" />
@@ -85,7 +88,6 @@
         <section>
           <h2 class="main-section-title">Asociados Estratégicos</h2>
           <div class="team-grid">
-            
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/Bavio.html" data-name="Diego Bavio" tabindex="0">
                 <div class="card-face card-front"><img src="./images/cropped-Diego-Bavio.png" alt="DiegoB" />
@@ -99,6 +101,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/AndreaMAP.html" data-name="Andrea Maffoni" tabindex="0">
                 <div class="card-face card-front"><img src="./images/andrea-maffoni.jpg" alt="Andrea" />
@@ -111,6 +114,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/AlejandroMAP.html" data-name="Alejandro Podsun" tabindex="0">
                 <div class="card-face card-front"><img src="./images/alejandro-podzun.jpg" alt="Alejandro" />
@@ -123,6 +127,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/MartinD.html" data-name="Martin Delgado" tabindex="0">
                 <div class="card-face card-front"><img src="./images/Retrato artístico y .png" alt="Martin" />
@@ -148,6 +153,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/pedro.pdf" data-name="Pedro Castro" tabindex="0">
                 <div class="card-face card-front"><img src="./images/pedro.jpg" alt="Pedro" />
@@ -160,6 +166,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/roberto.pdf" data-name="Roberto Días" tabindex="0">
                 <div class="card-face card-front"><img src="./images/roberto.jpg" alt="Roberto" />
@@ -172,6 +179,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/elena.pdf" data-name="Elena Ríos" tabindex="0">
                 <div class="card-face card-front"><img src="./images/elena.jpg" alt="Elena" />
@@ -197,6 +205,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/carolina.pdf" data-name="Carolina Paz" tabindex="0">
                 <div class="card-face card-front"><img src="./images/carolina.jpg" alt="Carolina" />
@@ -209,6 +218,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/andres.pdf" data-name="Andrés Montes" tabindex="0">
                 <div class="card-face card-front"><img src="./images/andres.jpg" alt="Andrés" />
@@ -221,6 +231,7 @@
                 </div>
             </div>
           </div>
+
             <div class="card-wrap">
               <div class="card" data-cv="./cvs/maria.pdf" data-name="María López" tabindex="0">
                 <div class="card-face card-front"><img src="./images/maria.jpg" alt="María" />
@@ -233,7 +244,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </section>
     </main>
@@ -250,7 +260,7 @@
                 <a href="./politica-privacidad.html" target="_blank">Política de Privacidad</a>
                 | <a href="./terminos-condiciones.html" target="_blank">Términos y Condiciones</a>
             </p>
-        </footer>
+    </footer>
 
     <div id="contactModal" class="modal">
         <div class="modal-panel contact-panel">
@@ -288,6 +298,21 @@
                     <button type="submit">Enviar Consulta</button>
                 </form>
             </div>
+        </div>
+    </div>
+
+<div id="cvModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-panel" role="document">
+          <div class="modal-header">
+            <div class="modal-title" id="modalTitle">CV</div>
+            <div class="modal-actions">
+              <button id="btnDownload" class="btn-download" title="Descargar CV">Descargar</button>
+              <button id="btnClose" class="btn-close" title="Cerrar">Cerrar ✕</button>
+            </div>
+          </div>
+          <div class="modal-body" id="modalBody">
+            <iframe id="modalIframe" class="modal-iframe" title="CV" src=""></iframe>
+          </div>
         </div>
     </div>
 
