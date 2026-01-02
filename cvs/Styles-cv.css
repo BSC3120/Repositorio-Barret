@@ -12,9 +12,8 @@
     --duration: 800ms; /* Específico de nosotros.html para la animación de tarjeta */
 }
 
-/* Estilos Globales: Reset básico y tipografía */
+
 * {
-    /* Modelo de caja: Asegura que el padding y el borde no aumenten el tamaño final del elemento */
     box-sizing: border-box
 }
 
