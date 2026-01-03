@@ -76,7 +76,7 @@ body {
     font-weight: 500;
     text-align: justify;
     padding: 10px 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .ul-tarj {
@@ -84,17 +84,34 @@ body {
     font-size: 20px;
     font-weight: 500;
     text-align: justify;
-    margin-bottom: 20px;
-    text-align: start;
-    margin-left: 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.p-legal {
+    color: var(--blanco);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    margin-left: 65px;
+}
+
+.ul-tarj::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blanco); 
+    font-weight: bold;
+    margin-left: 40px;
 }
 
 .title-list {
     color: var(--naranja-marca);
     font-size: 24px;
     text-align: start;
-    margin-left: 20px;
+    margin-left: 30px;
     font-weight: 600;
+    padding-top: 20px;
 }
 
 /* ======================================== */
@@ -155,7 +172,7 @@ header img {
     display: block;
 }
 
-/* 3. Tipografía de la Marca (Sin repeticiones) */
+
 .brand-title .name {
     font-size: 34px;
     font-weight: 700;
@@ -164,7 +181,7 @@ header img {
     margin: 2px;
 }
 
-/* Selector específico para resaltar una parte del nombre */
+
 .brand-title .seg {
     color: var(--naranja-marca);
     font-weight: 800;
@@ -176,7 +193,6 @@ header img {
     margin-top: 2px;
 }
 
-/*  Utilidades de Posicionamiento */
 .brand-text-only {
     margin-right: auto;
 }
@@ -199,6 +215,35 @@ header img {
     color: var(--naranja-marca);
 }
 
+
+/* =========================================================================== */
+/* ======== SECCION 7 - POLITICA DE PRIVACIDAD Y TRATAMIENTO DE DATOS ======== */
+/* =========================================================================== */
+
+
+.legal-document {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.legal-document .ul-tarj {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--blanco);
+}
+
+.legal-document .title-list {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.legal-document strong {
+    color: var(--naranja-marca);
+}
 
 
 /* ============================================================ */
@@ -378,7 +423,7 @@ header img {
 }
 
 .legal-links a {
-    color: var(--blanco);
+    color: var(--naranja-marca);
     font-weight: 800;
 }
 
