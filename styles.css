@@ -37,8 +37,16 @@ ol, ul {
 body {
     margin: 0;
     font-family: var(--font-family);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background: 
+        radial-gradient(
+            circle, 
+            rgba(0, 0, 0, 0.4) 0%,    
+            rgba(0, 0, 0, 0.7) 75%, 
+            #000000 95%
+        ), 
+        url('./images/Monitoring 4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--blanco);
     line-height: 1.45;
 }
 
@@ -105,7 +113,7 @@ body {
     border: 1.5px solid var(--naranja-marca);
     box-shadow: 0 10px 30px rgba(10, 20, 30, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(30px) saturate(1.06);
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .container-services {
@@ -377,14 +385,23 @@ header img {
 
 .services-full {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0x 20px;
+    padding: 40px 20px; /* Añadimos padding para que no respire mejor el contenido */
     overflow: hidden;
+    background: 
+        radial-gradient(
+            circle, 
+            rgba(0, 0, 0, 0.1) 0%,    
+            rgba(0, 0, 0, 0.4) 75%, 
+            #000000 95%
+        );
+    border-top: 1.5px solid var(--naranja-marca); /* Consistencia con los bordes del container */
+    box-shadow: 0 10px 30px rgba(10, 20, 30, 0.18);
 }
 
 .services-content {
@@ -433,18 +450,19 @@ header img {
 .social-networks {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 50px auto;
+    align-items: center;
+    gap: 25px;
+    margin: 10px auto;
     padding: 20px;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 .icon-network {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 100px;
     text-decoration: none;
     color: var(--blanco);
     transition: transform 0.3s ease;
@@ -452,12 +470,12 @@ header img {
 
 
 .img-wrapper {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(252, 76, 0, 0.1);
     border-radius: 12px;
     margin-bottom: 12px;
     overflow: hidden;
@@ -489,7 +507,7 @@ header img {
 
 .icon-network:hover .img-wrapper {
     border-color: var(--naranja-marca);
-    background: rgba(252, 76, 0, 0.1);
+    background: rgba(252, 76, 0, 0.2);
 }
 
 
@@ -507,8 +525,8 @@ header img {
     text-align: center;
     border-top: 6px solid var(--naranja-marca);
     border-bottom: 6px solid var(--naranja-marca);
-    border-right: 2px solid var(--naranja-marca);
-    border-left: 2px solid var(--naranja-marca);
+    border-right: 1px solid var(--naranja-marca);
+    border-left: 1px solid var(--naranja-marca);
     border-radius: 12px;
 }
 
@@ -903,7 +921,7 @@ header img {
 
 .footer {
     text-align: center;
-    padding: 2.5rem 1rem 1.5rem 1rem;
+    padding: 10px;
     font-size: 12px;
     margin-top: 0px; 
     background-color: var(--black);
@@ -926,12 +944,12 @@ header img {
 }
 
 .contact-info a {
-    color: var(--negro-marca);
+    color: var(--blanco);
     font-weight: 800;
 }
 
 .legal-links a {
-    color: var(--negro-marca);
+    color: var(--blanco);
     font-weight: 800;
 }
 
